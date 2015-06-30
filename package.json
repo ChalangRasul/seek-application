@@ -1,7 +1,8 @@
 {
   "name": "Seek",
   "description": "Our sample Node to Heroku app",
-  "main": "../server.js",
+  "main": "server.js",
+  "version": "0.12.3",
   "scripts": {
     "start": "node server.js"
   },
