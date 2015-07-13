@@ -1,0 +1,75 @@
+/*Universal Styles*/
+.sc-circle {
+  font-weight: 700;
+  border-radius: 5%;
+  height: 150px; 
+  position: relative;
+  margin-top: 30px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background-color: #1F1F1F;
+  color: white;
+  font-size: 12pt;
+  font-weight: 300;
+  transition: all 1.5s ease;
+}
+
+.sc-cricle.sc-circle-center {
+  margin: 0 auto;
+  width: 250px;
+}
+
+.sc-circle.sc-circle-left {
+  float:left;
+  width: 250px;
+}
+
+
+/*End of U.S*/
+
+a:visited{
+  color: inherit;
+}
+
+.dropdown:hover .dropdown-menu {
+  display:inline-block;
+}
+
+#icon-circle {
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background-color: #1F1F1F;
+  color: white;
+  font-size: 12pt;
+  font-weight: 300;
+  transition: all 1.5s ease;
+}
+
+#icon-circle:hover, #lp-circle:active{
+  background: rgba(58,129,186,.8);
+  color: white;
+
+}
+#icon-circle-diag:hover, #lp-circle-diag:active{
+  background: rgba(122,19,20,.8);
+  color: white;
+
+}
+
+#icon-circle-pat:hover, #lp-circle-pat:active{
+  background: rgba(8,85,110,.8);
+  color: white;
+
+}
+
+#icon-circle-pre:hover, #lp-circle-pre:active{
+  background: rgba(253,93,64,.8);
+  color: white;
+
+}
+
+#icon-circle-pub:hover, #lp-circle-pub:active{
+  background: rgba(97,189,104,.8);
+  color: white;
+
+}
