@@ -1,35 +1,31 @@
-var gcloud = require("gcloud");
-var express = require("express");
-var mysql = require("mysql");
-var app = express();
+var express    = require("express");
+var mysql      = require('mysql');
 var connection = mysql.createConnection({
-	host : "2001:4860:4864:1:6665:56e8:420c:536c",
-	user : "brett.dulan@outlook.com	",
-	password : "@naluds12",
-	database : "first_test_db"
+  host     : 'localhost',
+  user     : 'root',
+  password : '',
+  database : 'mysql'
 });
-/* Connection to Database */
-connection.connect(function(error){
-	if(error)
-	{
-		console.log("MySQL ERROR:" + error);
-	}
-	else
-	{
-		console.log("Connected with Database!");
-	}
-});
-// Sample query
-// connection.query('SELECT * from user LIMIT 2', function(err, rows, fields) {
-// 	connection.end();
-// 	   if (!err)
-// 	     	console.log('The solution is: ', rows);
-// 	   else
-// 	     	console.log('Error while performing Query.');
-// 	   });
-// });
+var app = express();
 
-/*start the server */
-app.listen(3000,function(){
-console.log("its started on PORT 3000");
+var queryString = "show tables";
+
+connection.connect(function(err){
+if(!err) {
+    console.log("Database is connected ... \n\n");  
+} else {
+    console.log(err);  
+}
 });
+
+app.get("/",function(req,res){
+connection.query(queryString, function(err, rows, fields) {
+connection.end();
+  if (!err)
+    console.log('The solution is: ', rows);
+  else
+    console.log('Error while performing Query.');
+  });
+});
+
+app.listen(3000);
