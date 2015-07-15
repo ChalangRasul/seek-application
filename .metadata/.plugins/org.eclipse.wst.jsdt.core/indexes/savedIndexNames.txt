@@ -1,7 +1,0 @@
-INDEX VERSION 1.3+/Users/brettdulan/Documents/herokuapp/seek-application/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
-3506291069.index
-2238348284.index
-2546381894.index
-2762725835.index
-1530192218.index
-326684083.index
